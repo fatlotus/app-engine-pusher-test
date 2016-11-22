@@ -1,0 +1,12 @@
+application: github-pusher
+runtime: python27
+api_version: 1
+version: 1
+threadsafe: yes
+
+handlers:
+- url: /test.txt
+  static_files: test.txt
+  upload: test.txt
+- url: /
+  script: main.app
